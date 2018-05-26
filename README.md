@@ -8,9 +8,9 @@ Make an Iac Infrastructure using AWS and Terraform
 
 ### Prerequisites
 
-Create a VPC with Nat Gateway 
-Create 3 instancies EC2 t2.micro with EBS attached 20GB in public network 
-Create 3 instancies EC2 t2.micro with EBS attached 20GB in private network 
+- Create a VPC with Nat Gateway 
+- Create 3 instancies EC2 t2.micro with EBS attached 20GB in public network 
+- Create 3 instancies EC2 t2.micro with EBS attached 20GB in private network 
 
 ### Installing
 
