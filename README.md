@@ -22,7 +22,7 @@ Terraform Plan - to see if local OK
 ``` terraform plan
 
 Terraform Apply - to construct Virtual Private Cloud
-```terraform apply
+``` terraform apply
 
 ## Deployment
 
