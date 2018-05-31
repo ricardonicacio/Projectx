@@ -2,7 +2,6 @@
 resource "aws_instance" "public1" {
   ami           = "${lookup(var.AMIS, var.AWS_REGION)}"
   instance_type = "t2.micro"
-  aws_subnet    = "${aws_subnet.main-public-1.id}"
 
   # The VPC Subnet
   subnet_id = "${aws_subnet.main-public-1.id}"
@@ -38,7 +37,6 @@ resource "aws_volume_attachment" "ebs-volume-1-attachment" {
 resource "aws_instance" "public2" {
   ami           = "${lookup(var.AMIS, var.AWS_REGION)}"
   instance_type = "t2.micro"
-  aws_subnet    = "${aws_subnet.main-public-2.id}"
 
   # The VPC Subnet
   subnet_id = "${aws_subnet.main-public-2.id}"
@@ -74,7 +72,6 @@ resource "aws_volume_attachment" "ebs-volume-2-attachment" {
 resource "aws_instance" "public3" {
   ami           = "${lookup(var.AMIS, var.AWS_REGION)}"
   instance_type = "t2.micro"
-  aws_subnet    = "${aws_subnet.main-public-3.id}"
 
   # The VPC Subnet
   subnet_id = "${aws_subnet.main-public-3.id}"
@@ -110,7 +107,6 @@ resource "aws_volume_attachment" "ebs-volume-3-attachment" {
 resource "aws_instance" "private1" {
   ami           = "${lookup(var.AMIS, var.AWS_REGION)}"
   instance_type = "t2.micro"
-  aws_subnet    = "${aws_subnet.main-private-1.id}"
 
   # The VPC Subnet
   subnet_id = "${aws_subnet.main-private-1.id}"
@@ -147,7 +143,6 @@ resource "aws_volume_attachment" "ebs-volume-4-attachment" {
 resource "aws_instance" "private2" {
   ami           = "${lookup(var.AMIS, var.AWS_REGION)}"
   instance_type = "t2.micro"
-  aws_subnet    = "${aws_subnet.main-private-2.id}"
 
   # The VPC Subnet
   subnet_id = "${aws_subnet.main-private-2.id}"
@@ -183,7 +178,6 @@ resource "aws_volume_attachment" "ebs-volume-5-attachment" {
 resource "aws_instance" "private3" {
   ami           = "${lookup(var.AMIS, var.AWS_REGION)}"
   instance_type = "t2.micro"
-  aws_subnet    = "${aws_subnet.main-private-3.id}"
 
   # The VPC Subnet
   subnet_id = "${aws_subnet.main-private-3.id}"
