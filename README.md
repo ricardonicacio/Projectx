@@ -8,9 +8,9 @@ Make an Iac Infrastructure using AWS and Terraform
 
 ### Prerequisites
 
-- Create a VPC with Nat Gateway 
-- Create 3 instancies EC2 t2.micro with EBS attached 20GB in public network 
-- Create 3 instancies EC2 t2.micro with EBS attached 20GB in private network 
+- Create a VPC with Nat Gateway
+- Create 3 instancies EC2 t2.micro with EBS attached 20GB in public network
+- Create 3 instancies EC2 t2.micro with EBS attached 20GB in private network
 
 ### Installing
 
@@ -19,10 +19,12 @@ Next step
 ### Break down into end to end tests
 
 Terraform Plan - to see if local OK
-``` terraform plan
+
+`terraform plan`
 
 Terraform Apply - to construct Virtual Private Cloud
-``` terraform apply
+
+`terraform apply`
 
 ## Deployment
 
@@ -30,7 +32,7 @@ Deploying in local machine
 
 ## Built With
 
-* [Terraform] The Terraform framework used
+* [Terraform] (https://www.terraform.io/) - The Terraform framework used
 * [AWS](https://aws.amazon.com/) - AWS Console
 
 ## Versioning
@@ -39,9 +41,8 @@ Deploying in local machine
 
 ## Authors
 
-* **Ricardo Nicacio** - *Initial work* 
+* **Ricardo Nicacio** - *Initial work*
 
 ## License
 
 Private
-
